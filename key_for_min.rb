@@ -6,9 +6,9 @@ def key_for_min_value(name_hash)
   
   name_hash.collect { |key, value|
     if min == nil
-      min = value
+      min = key
     elsif value < min
-      min = value
+      min = key
     end
   }
   
